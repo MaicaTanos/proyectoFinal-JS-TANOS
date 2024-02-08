@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;700&display=swap");
+* {
+  font-family: "Cabin Condensed", sans-serif;
+  box-sizing: border-box;
+}
+
+#bg {
+  background-image: url("../photos/fondo b&w.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+body {
+  background: radial-gradient(circle, rgba(235, 199, 208, 0.775) 60%, rgba(228, 165, 181, 0.868) 100%);
+}
+
+header {
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+header img {
+  margin: 5vh 5vw;
+  background-color: rgba(73, 67, 60, 0.2274509804);
+}
+
+.princ {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "pos pos" "pren gal";
+  gap: 30px;
+  margin-bottom: 20vh;
+}
+.princ a {
+  color: #423d3d;
+  font-size: 0.9em;
+}
+.princ a:hover {
+  color: #f8eaea;
+}
+
+.pos {
+  grid-area: pos;
+  background-color: rgba(230, 208, 122, 0.5058823529);
+  width: 50vw;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 550;
+  line-height: 1.4em;
+  padding: 30px;
+  border-radius: 10px;
+}
+.pos h1 {
+  font-size: 2em;
+  font-weight: 800;
+  color: #242215;
+  margin-bottom: 20px;
+}
+
+.ver-mas-gal {
+  grid-area: gal;
+  width: 30%;
+  background-color: rgba(230, 208, 122, 0.5058823529);
+  border-radius: 10px;
+  padding: 30px;
+}
+.ver-mas-gal h2 {
+  font-size: 1.5em;
+  margin-bottom: 1vh;
+  font-weight: 800;
+  text-align: center;
+}
+.ver-mas-gal p {
+  font-size: 1.1em;
+  font-weight: 550;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+.ver-mas-pren {
+  grid-area: pren;
+  width: 30%;
+  background-color: rgba(230, 208, 122, 0.5058823529);
+  border-radius: 10px;
+  padding: 30px;
+}
+.ver-mas-pren h2 {
+  font-size: 1.5em;
+  margin-bottom: 1vh;
+  font-weight: 800;
+  text-align: center;
+}
+.ver-mas-pren p {
+  font-size: 1.1em;
+  font-weight: 550;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+.title, .eventos, .prensa, .galeria, .contact {
+  text-align: center;
+  color: #c2a11f;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title h1, .eventos h1, .prensa h1, .galeria h1, .contact h1 {
+  font-size: 3.5em;
+  font-weight: 800;
+}
+.title::before, .eventos::before, .prensa::before, .galeria::before, .contact::before {
+  content: url("../img/icons/icono-titulo-i.png");
+  margin-right: 1vw;
+}
+.title::after, .eventos::after, .prensa::after, .galeria::after, .contact::after {
+  content: url("../img/icons/icono-titulo-d.png");
+  margin-left: 1vw;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.about-me p {
+  font-size: 1.1em;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+.about-me img {
+  width: 25vw;
+  padding: 2vw;
+  margin-bottom: 4vh;
+}
+
+.formulario {
+  margin-top: 3vh;
+  margin-bottom: 12vh;
+  font-size: 1.1em;
+  font-weight: 800;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto;
+  grid-template-areas: "form exter";
+}
+.formulario .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formulario .button .send-btn {
+  background-color: rgba(228, 202, 97, 0.833);
+}
+.formulario .button .send-btn a {
+  text-decoration: none;
+  font-weight: 800;
+  color: #242215;
+}
+.formulario .form {
+  width: 40vw;
+  padding: 2vw;
+}
+
+.external {
+  padding: 8vw;
+  grid-area: exter;
+  display: flex;
+  flex-direction: column;
+}
+.external img {
+  width: 6vw;
+  padding: 2vh;
+}
+.external a {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #242215;
+  font-weight: 800;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+.error h1 {
+  font-size: 1.5em;
+  margin-bottom: 5vh;
+}
+.error img {
+  width: 30vw;
+  margin-bottom: 5vh;
+}
+.error figcaption a {
+  text-decoration: none;
+  background-color: rgba(230, 208, 122, 0.5058823529);
+  padding-left: 1vw;
+  padding-right: 1vw;
+  color: #242215;
+  font-size: 2em;
+  font-weight: 800;
+}
+.error figcaption a:hover {
+  color: #f8eaea;
+}
+
+.botonera {
+  height: 30vh;
+  background-color: rgba(73, 67, 60, 0.2274509804);
+}
+.botonera img {
+  width: 170px;
+  margin-top: 2vh;
+}
+.botonera li {
+  padding-right: 3vw;
+}
+.botonera a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+  text-decoration: none;
+  font-size: 2.1em;
+  color: #c2a11f;
+  font-weight: 800;
+}
+.botonera a:hover {
+  color: #f8eaea;
+  background-size: 100% 2px;
+}
+
+footer {
+  background-color: rgba(73, 67, 60, 0.2274509804);
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+footer img {
+  width: 60px;
+  padding: 10px 10px;
+  margin-left: 20px;
+}
+footer a {
+  text-decoration: none;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "pic1 pic1 pic2" "pic3 pic4 pic5" "pic6 pic7 pic8" "pic6 pic9 pic10";
+  gap: 10px 10px;
+  margin: 20px 20px;
+}
+.gallery .pic1 {
+  grid-area: pic1;
+}
+.gallery .pic2 {
+  grid-area: pic2;
+}
+.gallery .pic3 {
+  grid-area: pic3;
+}
+.gallery .pic4 {
+  grid-area: pic4;
+}
+.gallery .pic5 {
+  grid-area: pic5;
+}
+.gallery .pic6 {
+  grid-area: pic6;
+}
+.gallery .pic7 {
+  grid-area: pic7;
+}
+.gallery .pic8 {
+  grid-area: pic8;
+}
+.gallery .pic9 {
+  grid-area: pic9;
+}
+.gallery .pic10 {
+  grid-area: pic10;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.press {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "press1 ." "press1 press2" ". press2" "press3 ." "press3 press4" ". press4";
+  justify-items: center;
+  margin-bottom: 10vh;
+}
+.press img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.press .press1 {
+  grid-area: press1;
+}
+.press .press2 {
+  grid-area: press2;
+}
+.press .press3 {
+  grid-area: press3;
+}
+.press .press4 {
+  grid-area: press4;
+  margin-right: 2vw;
+}
+.press figcaption {
+  font-weight: 800;
+  text-align: center;
+  margin-top: 4vh;
+}
+
+.shows p {
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.evento {
+  margin-left: 2vw;
+}
+.evento label {
+  font-size: 1.1em;
+  font-weight: 550;
+  margin-bottom: 1vh;
+  margin-top: 2vh;
+}
+.evento figcaption {
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25vw;
+}
+
+.boton {
+  margin-top: 3vh;
+  margin-bottom: 20vh;
+  margin-left: 10vw;
+}
+
+@media (max-width: 768px) {
+  #bg {
+    background-image: url("../photos/juana-bg-2.jpg");
+  }
+  .botonera {
+    height: 20vh;
+  }
+  .botonera img {
+    width: 18vw;
+  }
+  .botonera svg {
+    fill: #f3f1e9;
+  }
+  .botonera a {
+    color: #f3f1e9;
+  }
+  .botonera .show {
+    background-color: rgba(73, 67, 60, 0.2274509804);
+    background-size: 20vw;
+  }
+  header {
+    display: none;
+  }
+  .ver-mas-gal, .ver-mas-pren {
+    display: none;
+  }
+  .pos {
+    width: 100vw;
+    margin-top: 20vh;
+  }
+  .about-me {
+    flex-direction: column;
+    margin: 5vw;
+    font-size: 1.2em;
+  }
+  .about-me img {
+    width: 50vw;
+  }
+  .press {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .press figcaption {
+    font-size: 1.5em;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  .formulario .form {
+    width: 70vw;
+  }
+  .external img {
+    width: 15vw;
+  }
+  .error {
+    margin-top: 1vh;
+  }
+  .error img {
+    width: 100vw;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

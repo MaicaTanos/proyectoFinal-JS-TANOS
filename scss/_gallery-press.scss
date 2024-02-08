@@ -1,0 +1,91 @@
+// galeria y prensa
+.galeria{
+    @extend .title;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: 
+    "pic1 pic1 pic2"
+    "pic3 pic4 pic5"
+    "pic6 pic7 pic8"
+    "pic6 pic9 pic10";
+    gap: 10px 10px;
+    margin: 20px 20px;
+    .pic1{
+        grid-area: pic1;
+    }
+    .pic2{
+        grid-area: pic2;
+    }
+    .pic3{
+        grid-area: pic3;
+    }
+    .pic4{
+        grid-area: pic4;
+    }
+    .pic5{
+        grid-area: pic5;
+    }
+    .pic6{
+        grid-area: pic6;
+    }
+    .pic7{
+        grid-area: pic7;
+    }
+    .pic8{
+        grid-area: pic8;
+    }
+    .pic9{
+        grid-area: pic9;
+    }
+    .pic10{
+        grid-area: pic10;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.prensa{
+    @extend .title;
+}
+.press{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas: 
+    "press1 ." 
+    "press1 press2" 
+    ". press2" 
+    "press3 ."
+    "press3 press4"
+    ". press4";
+    justify-items: center;
+    margin-bottom: 10vh;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    .press1{
+        grid-area: press1;
+    }
+    .press2{
+        grid-area: press2;
+    }
+    .press3{
+        grid-area: press3;
+    }
+    .press4{
+        grid-area: press4;
+        margin-right: 2vw;
+    }
+        figcaption{
+            font-weight: $text-w-bolder;
+            text-align: center;
+            margin-top: 4vh;
+        }
+}

@@ -1,0 +1,207 @@
+//selectores comunes: bg,body,header. paginas index, sobre mi, contacto
+*{
+    font-family: $main-font;
+    box-sizing: border-box;
+}
+#bg{
+    background-image: url("../photos/fondo\ b&w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+body{
+    background: radial-gradient(circle, rgba(235, 199, 208, 0.775) 60%, rgba(228, 165, 181, 0.868) 100%);
+}
+header{
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+        img{
+            margin: 5vh 5vw;
+            background-color: $bg-dark-color;
+        }
+}
+.princ{
+        a{
+            color: $no-hover-color;
+            font-size: $font-sz-xs;
+            &:hover{color: $hover-color;}
+        }    
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas: 
+        "pos pos"
+        "pren gal";
+        gap: 30px;
+        margin-bottom: 20vh;       
+} 
+.pos{
+    grid-area: pos;
+    background-color: $bg-gold-color;
+    width: 50vw;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: $text-w-bold;
+    line-height: 1.4em;
+    padding: 30px;
+    border-radius: 10px;
+        h1{
+            font-size: $font-sz-xl;
+            font-weight: $text-w-bolder;
+            color: $dark-color;
+            margin-bottom: 20px;
+        }
+}
+.ver-mas-gal{
+    grid-area: gal;
+    width: 30%;
+    background-color: $bg-gold-color;
+    border-radius: 10px;
+    padding: 30px;
+    h2{
+        font-size: $font-sz-l;
+        margin-bottom: 1vh;
+        font-weight: $text-w-bolder;
+        text-align: center;
+    }
+    p{
+        font-size: $font-sz-m;
+        font-weight: $text-w-bold;
+        line-height: 1.3em;
+        text-align: center;
+    }
+}
+.ver-mas-pren{
+    grid-area: pren;
+    width: 30%;
+    background-color: $bg-gold-color;
+    border-radius: 10px;
+    padding: 30px;
+    h2{
+        font-size: $font-sz-l;
+        margin-bottom: 1vh;
+        font-weight: $text-w-bolder;
+        text-align: center;
+    }
+    p{
+        font-size: $font-sz-m;
+        font-weight: $text-w-bold;
+        line-height: 1.3em;
+        text-align: center;
+    }
+}
+.title{
+    text-align: center;
+    color: $main-color;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: $font-sz-xxl;
+        font-weight: $text-w-bolder;
+    }
+    &::before{
+        content: url("../img/icons/icono-titulo-i.png");
+        margin-right: 1vw;
+    }
+    &::after{
+        content: url("../img/icons/icono-titulo-d.png");
+        margin-left: 1vw;
+    }
+}    
+.about-me{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    p{
+       font-size: $font-sz-m;
+       font-weight: $text-w-regular;
+       text-align: center;
+       margin-left: 3vw;
+       margin-right: 3vw;
+    }
+    img{
+        width: 25vw;
+        padding: 2vw;
+        margin-bottom: 4vh;
+    }
+}
+.contact{
+    @extend .title;
+}
+.formulario{
+    margin-top: 3vh;
+    margin-bottom: 12vh;
+    font-size: $font-sz-m;
+    font-weight: $text-w-bolder;
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .send-btn{ 
+                background-color: rgba(228, 202, 97, 0.833);     
+                a{text-decoration: none;
+                  font-weight: $text-w-bolder;
+                  color: $dark-color; 
+                }
+            }
+        }
+    .form{
+        width: 40vw;
+        padding: 2vw;
+    }    
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: auto;
+    grid-template-areas: "form exter";
+}
+.external{
+    padding: 8vw;
+    grid-area: exter;
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 6vw;
+        padding: 2vh;
+    }
+    a{
+        text-decoration: none;
+        font-size: $font-sz-m;
+        color: $dark-color;
+        font-weight: $text-w-bolder;
+    }
+}   
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    h1{font-size: $font-sz-l;
+       margin-bottom: 5vh;
+    }
+    img{width: 30vw;
+        margin-bottom: 5vh;
+    }
+    figcaption{
+        a{text-decoration: none;
+          background-color: $bg-gold-color;
+          padding-left: 1vw;
+          padding-right: 1vw;
+          color: $dark-color;
+          font-size: $font-sz-xl;
+          font-weight: $text-w-bolder;
+          &:hover{color: $hover-color;}
+         }
+    }
+}   
+.boton{
+    margin-bottom: 10vh;
+}      

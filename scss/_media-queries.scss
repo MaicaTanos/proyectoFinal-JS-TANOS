@@ -1,0 +1,50 @@
+// responsive
+@media (max-width: 768px){
+    #bg{
+        background-image: url("../photos/juana-bg-2.jpg");
+    }
+    .botonera{
+        height: 20vh;
+        img{width: 18vw;}
+        svg{fill: $white-color;}
+        a{color: $white-color;}
+        .show{background-color: $bg-dark-color;
+        background-size: 20vw;}
+    }
+    header{ 
+        display: none;
+    }
+    .ver-mas-gal,.ver-mas-pren{display: none;}
+    .pos{
+        width: 100vw;
+        margin-top: 20vh;
+    }
+    .about-me{
+        flex-direction: column;
+        margin: 5vw;
+        font-size: 1.2em;
+            img{width: 50vw;}
+    }
+    .press{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            figcaption{
+                font-size: $font-sz-l;
+                margin-top: 2vh;
+                margin-bottom: 4vh;
+            }
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        .form{width: 70vw;}
+    }
+    .external{
+        img{width: 15vw;}
+    }
+    .error{
+        margin-top: 1vh;
+        img{width: 100vw;}
+    }
+}

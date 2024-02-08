@@ -1,0 +1,45 @@
+// nav y footer
+.botonera{ 
+    height: 30vh;
+    background-color: $bg-dark-color;
+        img{
+            width: 170px;
+            margin-top: 2vh;    
+        }
+        li{
+            padding-right: 3vw;
+        }
+            a{
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size 0.3s;
+                text-decoration: none;
+                font-size: $font-sz-inter;
+                color: $main-color;
+                font-weight: $text-w-bolder;
+                &:hover{
+                    color: $hover-color;
+                    background-size: 100% 2px;
+                }
+            }
+}
+footer{
+    background-color: $bg-dark-color;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+        img{
+            width: 60px;
+            padding: 10px 10px;
+            margin-left: 20px; 
+        }
+        a{
+            text-decoration: none;
+        }
+}
